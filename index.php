@@ -15,6 +15,3 @@ $search = new Search();
 $movies = $search->getMovies();
 
 var_dump($movies, 'list movies');
-
-
-//var_dump($_SESSION['movies'], 'SESSION');
