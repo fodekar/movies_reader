@@ -1,0 +1,9 @@
+# On suit les liens symboliques 
+Options +FollowSymlinks 
+# Activation du mod rewrite d'Apache 
+RewriteEngine On
+ 
+RewriteRule ^home$ /index.php
+RewriteRule ^([a-z]+)/([a-z]+)(/([0-9a-z]+))?/?$ router.php?controller=$1&action=$2&id=$4 [L]
+
+IndexIgnore *.png *.zip *.jpg *.gif *.css *.js
